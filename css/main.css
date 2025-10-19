@@ -286,3 +286,29 @@ section {
 .product-3 {
     background: #9ef59dcc;
 }
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    width: 250px;
+    height: 250px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    object-position: center;
+    /* box-shadow: 0 0 5px 2px #af9595; */
+}
+
+/* trend products */
+.trend-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.trend-card {
+    text-align: center;
+}

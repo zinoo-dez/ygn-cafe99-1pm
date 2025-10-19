@@ -1,6 +1,10 @@
 /* use desktop first */
 
 @media screen and (max-width: 700px) {
+    section {
+        padding: 20px;
+    }
+
     nav {
         padding: 0 25px;
     }
@@ -68,6 +72,17 @@
     .menu-container {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+    }
+
+    .menu-container,
+    .product-container,
+    .trend-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-img img {
+        width: 200px;
+        height: 200px;
     }
 
 }
