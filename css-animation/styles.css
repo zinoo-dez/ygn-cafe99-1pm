@@ -1,0 +1,65 @@
+p {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    animation: move 6s infinite forwards;
+    position: absolute;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+        left: 0;
+        background: lightblue;
+    }
+
+    25% {
+        left: 200px;
+        top: 0;
+        background: lightcoral;
+    }
+
+    50% {
+        top: 200px;
+        left: 200px;
+        border-radius: 50%;
+        transform: scale(0.5);
+        background: lightgoldenrodyellow;
+    }
+
+    75% {
+        top: 200px;
+        left: 0;
+        background: rgb(25, 96, 25);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background: lightblue;
+    }
+}
+
+div {
+    width: 250px;
+    padding: 20px;
+    background: lightblue;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    animation: change 4s infinite alternate;
+}
+
+@keyframes change {
+    0% {
+        top: 250px;
+        left: 100px;
+        opacity: 0.2;
+    }
+
+    100% {
+        top: 450px;
+        left: 0px;
+        opacity: 1;
+    }
+}

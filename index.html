@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media-query.css" />
     <link
@@ -65,8 +70,16 @@
       <!-- navbar end -->
       <!-- banner start -->
       <div class="banner">
-        <h1>Welcome to 90's Cafe</h1>
-        <p>Your cozy corner for the best coffee in town</p>
+        <h1
+          class="animate__animated animate__heartBeat animate__delay-3s animate__slower animate__infinite"
+        >
+          Welcome to 90's Cafe
+        </h1>
+        <p
+          class="animate__animated animate__bounceInDown animate__delay-1s animate__fast animate__repeat-2"
+        >
+          Your cozy corner for the best coffee in town
+        </p>
         <a href="" class="btn">Explore Our Menu</a>
       </div>
     </header>
@@ -85,7 +98,12 @@
             class="img-2"
           />
         </div>
-        <div class="text-container">
+        <div
+          class="text-container"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h2>About Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
@@ -145,7 +163,11 @@
             </p>
           </div>
           <div class="menu-item">
-            <div class="img-container-menu img-bg-fruit">
+            <div
+              class="img-container-menu img-bg-fruit"
+              data-aos="zoom-out-down"
+              data-aos-duration="2000"
+            >
               <img
                 src="https://cdn.pixabay.com/photo/2017/07/21/22/11/apricots-2527193_1280.jpg"
                 alt=""
@@ -336,6 +358,10 @@
         <a href="">YGN</a>
       </p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
